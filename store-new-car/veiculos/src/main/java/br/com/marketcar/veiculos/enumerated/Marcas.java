@@ -1,0 +1,33 @@
+package br.com.marketcar.veiculos.enumerated;
+
+public enum Marcas {
+    FORD,
+    CHEVROLET,
+    TOYOTA,
+    HONDA,
+    BMW,
+    MERCEDES_BENZ,
+    AUDI,
+    VOLKSWAGEN,
+    NISSAN,
+    HYUNDAI,
+    KIA,
+    JEEP,
+    SUBARU,
+    MAZDA,
+    RENAULT,
+    FIAT,
+    PEUGEOT,
+    CITROEN,
+    TESLA,
+    LEXUS,
+    JAGUAR,
+    LAND_ROVER,
+    VOLVO,
+    MITSUBISHI,
+    SUZUKI,
+    DUCATI,
+    YAMAHA,
+    KAWASAKI,
+    HARLEY_DAVIDSON
+}

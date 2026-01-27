@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: modulo-02
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/modulo_02
+    username: postgres
+    password: postgres
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+
+    open-in-view:
+        enabled: false
+
+logging:
+  level:
+    root: warn
+      #br.com.aprendizado.modulo02: DEBUG
+
+
+server:
+  port: 8080
