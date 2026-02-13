@@ -1,6 +1,7 @@
 package br.com.cinematoorafael.cinemamaisvoce.model;
 
 
+import br.com.cinematoorafael.cinemamaisvoce.service.ConsultaChatGPT;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -28,7 +29,7 @@ public class Serie {
         this.genero = Categoria.fromString(dadosSeries.genero().split(",")[0].trim());
         this.atores = dadosSeries.atores();
         this.poster = dadosSeries.poster();
-        this.sinopse = dadosSeries.sinopse();
+        this.sinopse = ConsultaChatGPT.obterTraducao( dadosSeries.sinopse()).trim();
     }
 
     @Override

@@ -1,6 +1,5 @@
 package br.com.cinematoorafael.cinemamaisvoce.service;
 
-import br.com.cinematoorafael.cinemamaisvoce.model.DadosSeries;
 import br.com.cinematoorafael.cinemamaisvoce.repository.IConverteDados;
 import tools.jackson.databind.ObjectMapper;
 
