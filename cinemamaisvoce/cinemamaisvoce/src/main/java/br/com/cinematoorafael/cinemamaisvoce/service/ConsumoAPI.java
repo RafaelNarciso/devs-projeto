@@ -1,4 +1,4 @@
-package br.com.cinematoorafael.cinemamaisvoce.model;
+package br.com.cinematoorafael.cinemamaisvoce.service;
 
 import java.io.IOException;
 import java.net.URI;
@@ -24,6 +24,6 @@ public class ConsumoAPI {
 
         String json = response.body();
         return json;
-        
+
     }
 }

@@ -6,16 +6,11 @@ import br.com.cinematoorafael.cinemamaisvoce.model.DadosTemporada;
 import br.com.cinematoorafael.cinemamaisvoce.model.Episodio;
 import br.com.cinematoorafael.cinemamaisvoce.service.ConsumoAPI;
 import br.com.cinematoorafael.cinemamaisvoce.service.ConverteDados;
-import org.antlr.v4.runtime.atn.EpsilonTransition;
-import org.apache.logging.log4j.message.StringFormattedMessage;
 
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.*;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
-public class Principal {
+public class PrincipalOlden {
     private Scanner leitura = new Scanner(System.in);
     private final String  ENDERECO ="https://www.omdbapi.com/?t=";
     private final String  API_KEY ="&apikey=d0bc9998";
@@ -122,34 +117,6 @@ public class Principal {
 //                        "Temporada " + entry.getKey() + " = " + String.format(Locale.US, "%.2f", entry.getValue())
 //                ));
 
-        var opcao = -1;
-        while(opcao != 0) {
-            var menu = """
-            1 - Buscar séries
-            2 - Buscar episódios
-            3 - Listar séries buscadas
-
-            0 - Sair                                 
-            """;
-
-            System.out.println(menu);
-            var opcao = leitura.nextInt();
-            leitura.nextLine();
-
-            switch (opcao) {
-                case 1:
-                    buscarSerieWeb();
-                    break;
-                case 2:
-                    buscarEpisodioPorSerie();
-                    break;
-                case 0:
-                    System.out.println("Saindo...");
-                    break;
-                default:
-                    System.out.println("Opção inválida");
-            }
-        }
 
 
     }
