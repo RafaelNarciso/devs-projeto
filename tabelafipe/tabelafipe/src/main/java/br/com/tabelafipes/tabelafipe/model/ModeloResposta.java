@@ -1,4 +1,6 @@
 package br.com.tabelafipes.tabelafipe.model;
 
-public record ModeloResposta() {
+import java.util.List;
+
+public record ModeloResposta(List<Modelo> modelos) {
 }

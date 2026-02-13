@@ -1,8 +1,9 @@
-package br.com.alura.screenmatch.repository;
+package br.com.rafa.CineMais.repository;
 
-import br.com.alura.screenmatch.model.Categoria;
-import br.com.alura.screenmatch.model.Episodio;
-import br.com.alura.screenmatch.model.Serie;
+
+import br.com.rafa.CineMais.model.Categoria;
+import br.com.rafa.CineMais.model.Episodio;
+import br.com.rafa.CineMais.model.Serie;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

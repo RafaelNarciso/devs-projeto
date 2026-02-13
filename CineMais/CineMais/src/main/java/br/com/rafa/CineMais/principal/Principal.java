@@ -1,16 +1,19 @@
-package br.com.alura.screenmatch.principal;
+package br.com.rafa.CineMais.principal;
 
-import br.com.alura.screenmatch.model.*;
-import br.com.alura.screenmatch.repository.SerieRepository;
-import br.com.alura.screenmatch.service.ConsumoApi;
-import br.com.alura.screenmatch.service.ConverteDados;
 
+import br.com.rafa.CineMais.model.*;
+import br.com.rafa.CineMais.repository.SerieRepository;
+import br.com.rafa.CineMais.service.ConsumoApi;
+import br.com.rafa.CineMais.service.ConverteDados;
+
+import java.util.*;
+import java.util.stream.Collectors;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 import java.util.Scanner;
-import java.util.stream.Collectors;
+
 
 public class Principal {
 

@@ -1,4 +1,4 @@
-package br.com.cinematoorafael.cinemamaisvoce.service;
+package br.com.tabelafipes.tabelafipe.service;
 
 import java.io.IOException;
 import java.net.URI;

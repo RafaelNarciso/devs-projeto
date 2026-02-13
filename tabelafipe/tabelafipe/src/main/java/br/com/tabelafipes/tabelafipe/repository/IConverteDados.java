@@ -1,4 +1,4 @@
-package br.com.cinematoorafael.cinemamaisvoce.repository;
+package br.com.tabelafipes.tabelafipe.repository;
 
 public interface IConverteDados {
 

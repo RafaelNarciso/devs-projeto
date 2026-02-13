@@ -1,4 +1,4 @@
 package br.com.tabelafipes.tabelafipe.model;
 
-public record Ano() {
+public record Ano(String codigo, String nome) {
 }
