@@ -2,22 +2,35 @@ package br.com.cinematoorafael.cinemamaisvoce.model;
 
 import com.fasterxml.jackson.annotation.JsonAlias;
 
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import org.hibernate.annotations.ManyToAny;
 
 import java.time.DateTimeException;
 import java.time.LocalDate;
+import java.util.UUID;
 
 @Getter
 @Setter
+@Entity
+@Table(name = "episodios")
 public class Episodio {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private UUID id;
     private Integer temporada;
     private String titulo;
     private Integer numeroEpsodio;
     private Double avalicao;
     private LocalDate dataLancamento;
 
+    @ManyToOne
+    private Serie serie;
+
+
+    public Episodio(){}
 
 
     public Episodio(Integer numerotemporada, DadosEpisodio dadosEpisodio) {
@@ -42,13 +55,15 @@ public class Episodio {
     @Override
     public String toString() {
         return """
-        📺 Episódio
-        ─────────────────────
+        
+                📺 Episódio
         🎬 Título        : %s
         📦 Temporada     : %d
         🔢 Episódio nº   : %d
         ⭐ Avaliação     : %s
         📅 Lançamento    : %s
+        
+        ──────────────────────────────────────────
         """.formatted(
                 titulo,
                 temporada,
