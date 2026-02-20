@@ -145,6 +145,7 @@ private DadosSeries getDadosSerie() {
                     .collect(Collectors.toList());
 
 
+
             serieEncontrada.setEpisodios(episodios);
             repository.save(serieEncontrada);
 
