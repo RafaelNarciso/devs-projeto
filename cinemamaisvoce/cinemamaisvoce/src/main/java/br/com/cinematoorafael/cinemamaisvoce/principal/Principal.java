@@ -135,6 +135,7 @@ private DadosSeries getDadosSerie() {
                 temporadas.add(dadosTemporada);
             }
 
+
             temporadas.forEach(System.out::println);
 
             List<Episodio> episodios = temporadas.stream()
