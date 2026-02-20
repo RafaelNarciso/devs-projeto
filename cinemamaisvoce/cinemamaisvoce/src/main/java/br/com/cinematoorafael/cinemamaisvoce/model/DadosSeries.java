@@ -11,6 +11,7 @@ public record DadosSeries(
         @JsonAlias("Genre") String genero,
         @JsonAlias("Actors") String atores,
         @JsonAlias("Poster") String poster,
-        @JsonAlias("Plot") String sinopse) {
+        @JsonAlias("Plot") String sinopse,
+        @JsonAlias("Type") String tipo
 
-}
+) {}

@@ -11,7 +11,7 @@ public enum Categoria {
     DOCUMENTARIO("Documentary"),
     DRAMA("Drama"),
     FANTASIA("Fantasy"),
-    FICCAO_CIENTIFICA("Science Fiction"),
+    FICCAO_CIENTIFICA("Sci-Fi"),
     GUERRA("War"),
     HISTORIA("History"),
     MISTERIO("Mystery"),
@@ -24,7 +24,9 @@ public enum Categoria {
     FAROESTE("Western"),
     POLICIAL("Crime"),
     SUPER_HEROI("Superhero"),
-    THRILLER("Thriller");
+    THRILLER("Thriller"),
+    OUTRO("Unknown");
+
 
     private String categoriaOmdb;
 
@@ -37,6 +39,10 @@ public enum Categoria {
     }
 
     public static Categoria fromString(String text) {
+        if (text == null || text.isBlank()) {
+            return OUTRO;
+        }
+
         for (Categoria categoria : Categoria.values()) {
             if (categoria.categoriaOmdb.equalsIgnoreCase(text)) {
                 return categoria;
